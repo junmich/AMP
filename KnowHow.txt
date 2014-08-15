@@ -1,1 +1,3 @@
-Know how to use repository. Test test test
+Know how to use repository. 
+
+Today I learn about using git client for git hub repository.
