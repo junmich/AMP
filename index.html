@@ -1,7 +1,58 @@
 <html>
 <head>
 	<title>JqWidgets Demo</title>
+	<link rel="stylesheet" href="scripts/jqwidgets/styles/jqx.base.css" type="text/css" />
+	<script type="text/javascript" src="scripts/scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="scripts/scripts/demos.js"></script>
+    <script type="text/javascript" src="scripts/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="scripts/jqwidgets/jqxmenu.js"></script>
+    <script type="text/javascript" src="scripts/jqwidgets/jqxcheckbox.js"></script>
+	<script type="text/javascript" src="scripts/jqwidgets/jqxtabs.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#thisButton").click(function() {
+				alert( $("#thisTest").val() );
+			});
+			
+			// menu
+			$("#jqxMenu").jqxMenu({ width : '100%', height : '30px' });
+			
+			$("#assetCategory").click(function() {
+				alert('test');
+			});
+			
+			// tabs
+			$('#jqxTab').jqxTabs({ height: 'auto', width: 'auto',  showCloseButtons: false });
+			
+		});
+	</script>
 </head>
-<body>
+<body style="margin : 0;">
+<div id="jqxMenu">
+	<ul>
+		<li>Assets</li>
+		<li>Purchasing
+		  <ul>
+		    <li>PO</li>
+			<li>PR</li>
+		  </ul>
+		</li>
+		<li>
+		  System Files
+		  <ul>
+			<li id='assetCategory'>Asset Category</li>
+		  </li>
+		</li>
+	</ul>
+</div>
+
+<div id="jqxTab">
+	<ul>
+		<li>Home</li>
+	</ul>
+	<div>
+		Home
+	</div>
+</div>
 </body>
 </html>
