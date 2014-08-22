@@ -1,0 +1,5 @@
+Tips.
+
+- url is case sensitive.
+- make sure that the url is in the right Case (uppercase and lowercase).
+
